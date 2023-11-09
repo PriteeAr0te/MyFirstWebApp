@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Music Application</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="brand"><img src="spotify.png" alt="Spotify logo">Spotify</li>
+      <li class="nav">Home</li>
+      <li class="nav">About</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="songList">
+      <h1 class="heading">Your Favourite Songs is Here!</h1>
+
+      <div class="songItemContainer">
+
+        <div class="songItem">
+          <img src="cover/10.jpg" alt="1">
+          <span class="songName"> Jai Shree Ram </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="9"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/9.jpg" alt="1">
+          <span class="songName"> Namo Namo </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="8"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/11.jpg" alt="1">
+          <span class="songName"> Ajib dastan hai yeh </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="10"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/12.jpg" alt="1">
+          <span class="songName"> Mere ghar ram aye hain </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="11"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/13.jpg" alt="1">
+          <span class="songName"> Hai Junoon </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="12"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/14.jpg" alt="1">
+          <span class="songName"> Rahe Na Rahe Hum </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="13"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/15.jpg" alt="1">
+          <span class="songName"> Saddi Gali Aaja </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="14"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        
+        <div class="songItem">
+          <img src="cover/4.jpg" alt="1">
+          <span class="songName"> Is This Love </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="3"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/6.png" alt="1">
+          <span class="songName"> Ram Siya Ram </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="5"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/5.png" alt="1">
+          <span class="songName"> Heeriye </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="4"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover/8.jpg" alt="1">
+          <span class="songName"> Main Nikla Gaddi Leke </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="7"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/1.jpg" alt="1">
+          <span class="songName"> Ajab si </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="0"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover/3.jpg" alt="1">
+          <span class="songName"> Taal se Taal </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="2"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+        <div class="songItem">
+          <img src="cover/7.jpg" alt="1">
+          <span class="songName"> Zara Sa </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="6"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+        <div class="songItem">
+          <img src="cover/2.jpg" alt="1">
+          <span class="songName"> Aahista Aahista </span>
+          <span class="songPlay"><span class="timestamp">05:34 <i id="1"
+                class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="songBanner"></div>
+  </div>
+
+  <div class="Bottom">
+    <input type="range" name="range" id="progressBar" min="0" max="100" value="0">
+    <div class="icons">
+      <!-- fontawesome icons -->
+      <i class="fa-solid fa-backward-step" id="previous"></i>
+      <i class="fa-regular fa-circle-play masterPlay"></i>
+      <i class="fa-solid fa-forward-step" id="next"></i>
+      <!-- <i class="fa-regular fa-circle-pause"></i> -->
+    </div>
+    <div class="songInfo">
+      <img src="playing.gif" width="60px" alt="gif1" id="gif"> <span id="masterSongName">Ram Siya Ram</span>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/53a4b1b862.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+</body>
+
+</html>
